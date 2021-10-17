@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_ok/all_news/cubit/all_news_cubit.dart';
 
 class AllNewsPage extends StatefulWidget {
-  final String sourceId;
   const AllNewsPage({Key? key, required this.sourceId}) : super(key: key);
+  final String sourceId;
 
   @override
   State<AllNewsPage> createState() => _AllNewsPageState();
@@ -29,7 +29,7 @@ class _AllNewsPageState extends State<AllNewsPage> {
             return ListView.builder(
               itemCount: (state.data['articles'] as List).length,
               itemBuilder: (context, index) {
-                var item = (state.data['articles'] as List)[index] as Map;
+                final item = (state.data['articles'] as List)[index] as Map;
                 return ListTile(
                   title: Text(item['title'].toString()),
                   subtitle: Text(

@@ -1,11 +1,10 @@
-import 'package:chopper/chopper.dart';
-import "dart:async";
+import 'dart:async';
 
+import 'package:chopper/chopper.dart';
 import 'package:news_ok/utils/api_endpoints.dart';
-import 'package:news_ok/utils/api_key_injector.dart';
 
 // This is necessary for the generator to work.
-part "news_api_service.chopper.dart";
+part 'news_api_service.chopper.dart';
 
 final chopper = ChopperClient(
   services: [
@@ -25,19 +24,19 @@ abstract class NewsApiService extends ChopperService {
   // static NewsApiService create([ChopperClient? c]) => _$NewsApiService(c);
   @Get(
     path: ApiEndPoints.kGetEverything,
-    headers: {"x-api-key": '57e671c523824417aed1c0559a572fbf'},
+    headers: {'x-api-key': '57e671c523824417aed1c0559a572fbf'},
   )
   Future<Response> getEverything(
     @Query('q') String query,
   );
   @Get(
     path: ApiEndPoints.kGetTopHeadlines,
-    headers: {"x-api-key": '57e671c523824417aed1c0559a572fbf'},
+    headers: {'x-api-key': '57e671c523824417aed1c0559a572fbf'},
   )
   Future<Response> getTopHeadlines();
   @Get(
     path: ApiEndPoints.kGetHeadLineSources,
-    headers: {"x-api-key": '57e671c523824417aed1c0559a572fbf'},
+    headers: {'x-api-key': '57e671c523824417aed1c0559a572fbf'},
   )
   Future<Response> getHeadLineSources();
 }

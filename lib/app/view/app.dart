@@ -8,9 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:news_ok/app/router/router_utility.dart';
-import 'package:news_ok/counter/counter.dart';
 import 'package:news_ok/l10n/l10n.dart';
-import 'package:news_ok/login/login_page.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);

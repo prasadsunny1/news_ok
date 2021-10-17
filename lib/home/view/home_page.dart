@@ -29,16 +29,15 @@ class _HomePageState extends State<HomePage> {
             return ListView.builder(
               itemCount: (state.data['sources'] as List).length,
               itemBuilder: (context, index) {
-                var item = (state.data['sources'] as List)[index] as Map;
+                final item = (state.data['sources'] as List)[index] as Map;
                 return ListTile(
                   title: Text(item['name'].toString()),
                   onTap: () {
-                    var topicId = item['id'].toString();
+                    final topicId = item['id'].toString();
                     Navigator.of(context).pushNamed(
                       RouterConstants.allNewsPage,
                       arguments: topicId,
                     );
-                    // BlocProvider.of<HomeCubit>(context).newsApiService.getEverything(topicId)
                   },
                 );
               },

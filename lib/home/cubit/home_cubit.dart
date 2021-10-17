@@ -3,8 +3,6 @@ import 'dart:convert';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:news_ok/services/news_api_service.dart';
-import 'package:news_ok/utils/api_key_injector.dart';
-import 'package:news_ok/utils/app_constants.dart';
 
 part 'home_state.dart';
 
