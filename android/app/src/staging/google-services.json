@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1000249333432",
+    "project_id": "news-ok",
+    "storage_bucket": "news-ok.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000249333432:android:9cb1e53060e8267540464d",
+        "android_client_info": {
+          "package_name": "com.example.verygoodcore.news_ok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000249333432-mkfls7gqbtrcu5epafntfdnsbj6e74c9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsFncYZfrvR5dO1SUt5a-D2VxJZV0AdWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000249333432-mkfls7gqbtrcu5epafntfdnsbj6e74c9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
